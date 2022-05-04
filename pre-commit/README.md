@@ -35,3 +35,5 @@ exec ./pre-commit/tests.sh
 You'll notice that the repo entry is a URL. There you will find the hooks defined in an installable Python repo.
 
 You can also simply run a local command so we can call [tests.sh](./tests.sh) using Pre-Commit.
+
+Alternatively, we could remove our dev-dependency on flake8 all together and use the <https://github.com/pycqa/flake8> hook.
