@@ -1,4 +1,4 @@
-# You ~could have invented~ probably did invent Pre-Commit
+# You ~could have invented~ probably did invent Pre-Commit
 
 ## How and when should we run tests?
 
@@ -12,7 +12,7 @@ That's fine. We can add it to our [.git/hooks/](.git/hooks/) `pre-commit` file s
 exec ./pre-commit/tests.sh
 ```
 
-### Questions
+### Questions
 
 1. Is this the right time to run tests?
 2. If so, haven't we already solved the problem with the hooks file?
@@ -32,8 +32,10 @@ exec ./pre-commit/tests.sh
 3. `pre-commit install`
 4. `pre-commit run [hook-id]`
 
-You'll notice that the repo entry is a URL. There you will find the hooks defined in an installable Python repo.
+You'll notice that the `repo` entry is a URL. There you will find the hooks defined in an installable Python repo.
 
 You can also simply run a local command so we can call [tests.sh](./tests.sh) using Pre-Commit.
 
 Alternatively, we could remove our dev-dependency on flake8 all together and use the <https://github.com/pycqa/flake8> hook.
+
+We can also add hooks in other languages, as long as we have them installed.
