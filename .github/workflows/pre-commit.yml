@@ -37,4 +37,5 @@ jobs:
       - name: Run Pre-Commit Hooks
         shell: bash
         run: |
-          pre-commit run --all-files
+          # pre-commit run --all-files
+          pre-commit run markdownlint --files pre-commit/*

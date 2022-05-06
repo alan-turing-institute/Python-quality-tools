@@ -48,3 +48,5 @@ We could use [pre-commit/action](https://github.com/pre-commit/action) but it is
 ## How do we cache dependencies between runs?
 
 You'll notice that the majority of time is spent installing hooks. It is often the case that setup takes longer than we would like. We can cache things that do not frequently change between runs.
+
+Failed jobs do not result in the cache being made (I don't think).
