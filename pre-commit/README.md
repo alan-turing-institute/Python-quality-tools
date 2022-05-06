@@ -49,4 +49,4 @@ We could use [pre-commit/action](https://github.com/pre-commit/action) but it is
 
 You'll notice that the majority of time is spent installing hooks. It is often the case that setup takes longer than we would like. We can cache things that do not frequently change between runs.
 
-Failed jobs do not result in the cache being made (I don't think).
+Failed jobs do not result in the cache being made (I don't think). The cache action should look for caches in parent branches so we may want to run pre-commit checks on `main` even if we expect them to always pass.
