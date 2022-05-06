@@ -39,3 +39,8 @@ You can also simply run a local command so we can call [tests.sh](./tests.sh) us
 Alternatively, we could remove our dev-dependency on flake8 all together and use the <https://github.com/pycqa/flake8> hook.
 
 We can also add hooks in other languages, as long as we have them installed. If we don't, hooks are often available in Docker flavours too (and you can write your own if one isn't). There is a big list [on the Pre-Commit website](https://pre-commit.com/hooks.html).
+
+## How do we run Pre-Commit in a GH Action?
+
+We probably want to run Pre-Commit in an Action in case devs forget to run pre-commit install.
+We could use [pre-commit/action](https://github.com/pre-commit/action) but it is deprecated and recommends [pre-commit.ci](https://pre-commit.com/). Instead of either of those, we'll write a simple shell equivalent.
