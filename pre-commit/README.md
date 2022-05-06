@@ -44,3 +44,7 @@ We can also add hooks in other languages, as long as we have them installed. If 
 
 We probably want to run Pre-Commit in an Action in case devs forget to run pre-commit install.
 We could use [pre-commit/action](https://github.com/pre-commit/action) but it is deprecated and recommends [pre-commit.ci](https://pre-commit.com/). Instead of either of those, we'll write a simple shell equivalent.
+
+## How do we cache dependencies between runs?
+
+You'll notice that the majority of time is spent installing hooks. It is often the case that setup takes longer than we would like. We can cache things that do not frequently change between runs.
