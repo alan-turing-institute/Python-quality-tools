@@ -9,6 +9,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
+Plug 'fisadev/vim-isort'
 Plug 'tmhedberg/simpylfold'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'

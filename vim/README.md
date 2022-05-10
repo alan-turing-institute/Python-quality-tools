@@ -43,6 +43,8 @@ Open one of the broken files with vim
 vim examples/mypy/incompatible_type/broken.py
 ```
 
+### Syntastic
+
 [Syntastic](https://github.com/vim-syntastic/syntastic) has been configured to
 automatically open a list of errors in the [location
 list](https://vimhelp.org/quickfix.txt.html).
@@ -63,9 +65,17 @@ You can look at the details of the available and enabled checkers with
 If Syntastic messages are getting in your way, you can turn automatic checking
 off for the buffer with `:SyntasticToggleMode`.
 
-## Airline integration
+### Airline integration
 
 The [vim-airline](https://github.com/vim-airline/vim-airline) status bar has a
 Syntastic plugin. When you open a file with errors, Syntastic, information will
 be shown at the right hand side of the status bar. It will indicate the line
 number of the first error and the total number of errors.
+
+### isort
+
+[isort](https://pypi.org/project/isort/) and a [vim
+plugin](https://github.com/fisadev/vim-isort) have been installed.
+
+To use isort in vim you can either call the `:Isort` command or, in [visual mode](http://vimdoc.sourceforge.net/htmldoc/visual.html#visual-mode),
+select the import block and press `Ctrl-i`.
